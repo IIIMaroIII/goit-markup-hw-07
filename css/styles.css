@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --title-text-color: #212121;
   --text-color: #757575;
   --accent-color: #2196f3;
@@ -13,7 +13,7 @@
   --items: 3;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --duration: 250ms;
-}
+} */
 
 /* flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items)); */
 /* title text color #212121 */
@@ -28,7 +28,7 @@
 
 /* Reset style */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -47,16 +47,16 @@ img {
   margin: 0;
   list-style: none;
   text-decoration: none;
-}
-.hero-button,
+} */
+/* .hero-button,
 .button {
   border: none;
   cursor: pointer;
-}
+} */
 
 /* General style */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -68,23 +68,20 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
-*:hover,
+/* *:hover,
 *:focus {
   transition: color var(--duration) var(--timing-function);
-}
+} */
 
-.container {
+/* .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  /* outline: 2px solid tomato;
-  outline-offset: -2px; */
-}
+} */
 
 /* Page */
 
@@ -251,40 +248,19 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-button {
-  transition: background-color var(--duration) var(--timing-function),
-    color var(--duration) var(--timing-function);
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 4px;
-  min-width: 200px;
-  padding: 10px 32px;
-
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: inherit;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-}
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--accent-color-secondary);
-}
+/* 
+ */
 
 /* Section General*/
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .section-title {
   color: var(--title-text-color);
-}
+} */
 
 /* Section Features */
 
@@ -644,13 +620,13 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button-sigh-up {
+/* .button-sigh-up {
   margin-left: 12px;
   text-align: left;
   padding-left: 28px;
-}
+} */
 
-.footer-button-modal-icon {
+/* .footer-button-modal-icon {
   display: block;
   position: absolute;
   top: 50%;
@@ -664,7 +640,7 @@ img {
 
 .footer-button-modal-icon:hover .footer-button-modal-icon:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 /* Portfolio */
 
 .portfolio > .section-title {
