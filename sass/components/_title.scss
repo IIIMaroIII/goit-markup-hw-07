@@ -1,0 +1,126 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Hero Title                                 */
+/* -------------------------------------------------------------------------- */
+.hero-title {
+  display: block;
+  width: 696px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* -------------------------------------------------------------------------- */
+/*                                Section Title                               */
+/* -------------------------------------------------------------------------- */
+.section-title {
+  color: var(--title-text-color);
+}
+/* -------------------------------------------------------------------------- */
+/*                               Features title                               */
+/* -------------------------------------------------------------------------- */
+
+.features-item > .section-title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.features .section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-container > .section-title {
+  display: none;
+}
+/* -------------------------------------------------------------------------- */
+/*                                     Job                                    */
+/* -------------------------------------------------------------------------- */
+.job .section-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Team wrapper                                */
+/* -------------------------------------------------------------------------- */
+
+.team-wrapper > .section-title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------- Team-item ------------------------------- */
+
+.team-item > .section-title,
+.team-item > .section-text {
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-item > .section-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Customers                                 */
+/* -------------------------------------------------------------------------- */
+
+.container > .section-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.customers .section-title {
+  margin-bottom: 50px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Footer title                                */
+/* -------------------------------------------------------------------------- */
+
+.connecting .section-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Portfolio title                              */
+/* -------------------------------------------------------------------------- */
+
+.portfolio > .section-title {
+  display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                    Portfolio benefits (rename "Cardset")                   */
+/* -------------------------------------------------------------------------- */
+
+.benefits-list .section-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}

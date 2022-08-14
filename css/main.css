@@ -282,6 +282,14 @@ p {
   margin: 0;
 }
 
+body {
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
 img {
   display: block;
 }
@@ -302,10 +310,6 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.section-title {
-  color: var(--title-text-color);
 }
 
 .container {
@@ -377,17 +381,6 @@ img {
 /* -------------------------------------------------------------------------- */
 /*                              Portfolio button                              */
 /* -------------------------------------------------------------------------- */
-.button-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
-}
-
 .button {
   min-width: 73px;
   padding: 6px 22px;
@@ -435,4 +428,216 @@ img {
   outline: none;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Overlay Button                               */
+/* -------------------------------------------------------------------------- */
+.overlay-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.overlay-btn:focus .overlay-svg {
+  fill: var(--accent-color);
+}
+
+.overlay-btn:focus {
+  outline: none;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--white-color);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.socials-link {
+  -webkit-transition: background-color var(--duration) var(--timing-function), fill var(--duration) var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function), fill var(--duration) var(--timing-function);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--white-color);
+  fill: #afb1b8;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             Footer socials-list                            */
+/* -------------------------------------------------------------------------- */
+.connecting .socials {
+  background-color: var(--secondary-background-color);
+  padding-bottom: 0;
+}
+
+.connecting .socials-link {
+  -webkit-transition: background-color var(--duration) var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function);
+  fill: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.connecting .socials-link:hover,
+.connecting .socials-link:focus {
+  background-color: var(--accent-color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Hero Title                                 */
+/* -------------------------------------------------------------------------- */
+.hero-title {
+  display: block;
+  width: 696px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Section Title                               */
+/* -------------------------------------------------------------------------- */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Features title                               */
+/* -------------------------------------------------------------------------- */
+.features-item > .section-title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.features .section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-container > .section-title {
+  display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     Job                                    */
+/* -------------------------------------------------------------------------- */
+.job .section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Team wrapper                                */
+/* -------------------------------------------------------------------------- */
+.team-wrapper > .section-title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------- Team-item ------------------------------- */
+.team-item > .section-title,
+.team-item > .section-text {
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-item > .section-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Customers                                 */
+/* -------------------------------------------------------------------------- */
+.container > .section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.customers .section-title {
+  margin-bottom: 50px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Footer title                                */
+/* -------------------------------------------------------------------------- */
+.connecting .section-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Portfolio title                              */
+/* -------------------------------------------------------------------------- */
+.portfolio > .section-title {
+  display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                    Portfolio benefits (rename "Cardset")                   */
+/* -------------------------------------------------------------------------- */
+.benefits-list .section-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }/*# sourceMappingURL=main.css.map */
