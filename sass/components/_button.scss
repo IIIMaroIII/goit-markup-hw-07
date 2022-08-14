@@ -129,10 +129,17 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.overlay-btn:focus {
+  outline: none;
+}
+
 .overlay-btn:focus .overlay-svg {
   fill: var(--accent-color);
 }
 
-.overlay-btn:focus {
-  outline: none;
+.overlay-svg {
+  transition: fill var(--duration) var(--timing-function);
+
+  width: 18px;
+  height: 18px;
 }

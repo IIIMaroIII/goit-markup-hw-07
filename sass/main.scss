@@ -6,6 +6,18 @@
 @import "./base/section";
 @import "./base/container";
 
+@import "./components/logo";
 @import "./components/button";
 @import "./components/socials";
 @import "./components/title";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/job";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/footer";
+@import "./layout/backdrop";
+@import "./layout/modal";
+@import "./layout/benefits";

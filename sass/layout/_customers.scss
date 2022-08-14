@@ -1,0 +1,28 @@
+.customers-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--indent);
+  --items: 4;
+}
+
+.customers-link {
+  transition: border-color var(--duration) var(--timing-function),
+    fill var(--duration) var(--timing-function);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
+  border-radius: 4px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
