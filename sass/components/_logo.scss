@@ -9,9 +9,10 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-}
-.header-logo span {
-  color: var(--accent-color);
+
+  & span {
+    color: var(--accent-color);
+  }
 }
 
 /* ------------------------------- Footer logo ------------------------------ */
@@ -25,8 +26,8 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-}
 
-.footer-logo span {
-  color: var(--accent-color);
+  & span {
+    color: var(--accent-color);
+  }
 }

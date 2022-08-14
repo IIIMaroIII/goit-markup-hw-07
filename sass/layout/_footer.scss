@@ -27,15 +27,12 @@
 
 .footer-address {
   font-style: normal;
+  margin-right: 70px;
 }
 
 .footer-container {
   display: flex;
   align-items: baseline;
-}
-
-.footer-address {
-  margin-right: 70px;
 }
 
 .footer-form {
@@ -52,6 +49,16 @@
 .footer-form-wrapper {
   display: block;
   position: relative;
+}
+
+.footer-button-modal-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
 }
 
 .footer-form-text {
@@ -79,16 +86,16 @@
   border-radius: 4px;
 
   transition: filter var(--duration) var(--timing-function);
-}
 
-.footer-form-input:focus {
-  outline: none;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
+  &:focus {
+    outline: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
 
-.footer-form-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
 
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+  }
 }

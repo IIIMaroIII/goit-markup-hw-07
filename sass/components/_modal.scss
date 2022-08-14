@@ -32,15 +32,11 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--modal-text);
-}
 
-.modal-input:focus {
-  outline: none;
-  border: 1px solid var(--accent-color);
-}
-
-.modal-input:focus + .modal-icon {
-  fill: var(--accent-color);
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .modal-label-desc {
@@ -69,6 +65,10 @@
 
   width: 18px;
   height: 18px;
+
+  .modal-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 /* --------------------------------- Comment -------------------------------- */
@@ -87,19 +87,19 @@
 
   padding: 12px 16px;
   resize: none;
-}
 
-.modal-comment:focus {
-  outline: none;
-  border: 1px solid var(--accent-color);
-}
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+  }
 
-.modal-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal-label-comment {
@@ -126,14 +126,6 @@
   overflow: hidden;
 }
 
-.checkbox:checked + .label-checkbox::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/svg/custom-checkbox.svg);
-  background-size: contain;
-  background-origin: border-box;
-  border: 2px solid var(--accent-color);
-}
-
 .label-checkbox {
   display: flex;
   flex-wrap: wrap;
@@ -146,19 +138,27 @@
   line-height: 1.71;
 
   color: #757575;
-}
 
-.label-checkbox::before {
-  display: inline-block;
-  margin-left: 14px;
-  margin-right: 7px;
-  content: "";
-  width: 16px;
-  height: 15px;
-  cursor: pointer;
+  &::before {
+    display: inline-block;
+    margin-left: 14px;
+    margin-right: 7px;
+    content: "";
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
 
-  border: 2px solid #212121;
-  border-radius: 2px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+
+    .checkbox:checked + & {
+      background-color: var(--accent-color);
+      background-image: url(../images/svg/custom-checkbox.svg);
+      background-size: contain;
+      background-origin: border-box;
+      border: 2px solid var(--accent-color);
+    }
+  }
 }
 
 .modal-link-policy {

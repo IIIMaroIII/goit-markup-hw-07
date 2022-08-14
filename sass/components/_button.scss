@@ -22,36 +22,23 @@
   font-size: inherit;
   line-height: 1.88;
   letter-spacing: 0.06em;
-}
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--accent-color-secondary);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-secondary);
+  }
 }
 
 .button-sigh-up {
   margin-left: 12px;
   text-align: left;
   padding-left: 28px;
-}
-
-.footer-button-modal-icon {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 28px;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-
   transition: box-shadow var(--duration) var(--timing-function);
-}
 
-/* -------------------------------------------------------------------------- */
-/*                                Footer button                               */
-/* -------------------------------------------------------------------------- */
-
-.footer-button-modal-icon:hover .footer-button-modal-icon:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -76,20 +63,20 @@
   line-height: 1.62;
   text-align: center;
   letter-spacing: inherit;
-}
 
-.button:not(:last-child) {
-  display: inline-block;
-  margin-right: 8px;
-}
+  &:not(:last-child) {
+    display: inline-block;
+    margin-right: 8px;
+  }
 
-.button:hover,
-.button:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -98,12 +85,13 @@
 
 .button-modal-submit {
   transition: box-shadow var(--duration) var(--timing-function);
-}
 
-.button-modal-submit:focus .button-modal-submit:hover {
-  outline: none;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  &:focus,
+  &:hover {
+    outline: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -127,14 +115,10 @@
 
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-}
 
-.overlay-btn:focus {
-  outline: none;
-}
-
-.overlay-btn:focus .overlay-svg {
-  fill: var(--accent-color);
+  &:focus {
+    outline: none;
+  }
 }
 
 .overlay-svg {
@@ -142,4 +126,8 @@
 
   width: 18px;
   height: 18px;
+
+  .overlay-btn:focus & {
+    fill: var(--accent-color);
+  }
 }

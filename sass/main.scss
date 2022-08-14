@@ -10,6 +10,9 @@
 @import "./components/button";
 @import "./components/socials";
 @import "./components/title";
+@import "./components/backdrop";
+@import "./components/overlay";
+@import "./components/modal";
 
 @import "./layout/header";
 @import "./layout/hero";
@@ -18,6 +21,9 @@
 @import "./layout/team";
 @import "./layout/customers";
 @import "./layout/footer";
-@import "./layout/backdrop";
-@import "./layout/modal";
 @import "./layout/benefits";
+
+// 1) Переименовать теги согласно BEM
+//
+// 3) Использовать placeholder sass ( 0:37 минута Урок 2) ( создать %align, вызвать @extend %align )
+// 4) Mixin ( 0:48, урок 2 ) (@mixin 'name' {}; @include 'name')

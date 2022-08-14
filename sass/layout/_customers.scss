@@ -19,10 +19,10 @@
   border: 1px solid #afb1b8;
   fill: #afb1b8;
   border-radius: 4px;
-}
 
-.customers-link:hover,
-.customers-link:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
