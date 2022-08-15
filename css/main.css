@@ -489,7 +489,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   color: var(--title-text-color);
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.1666666667;
   text-align: center;
@@ -513,7 +513,7 @@ img {
 /* -------------------------------------------------------------------------- */
 .hero__title {
   width: 696px;
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.3636363636;
   letter-spacing: 0.06em;
@@ -532,7 +532,7 @@ img {
 .features-list__title {
   display: block;
   margin-bottom: 10px;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
   text-align: left;
@@ -543,7 +543,7 @@ img {
 /*                                    team                                    */
 /* -------------------------------------------------------------------------- */
 .team-list__title {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
 }
@@ -557,7 +557,7 @@ img {
 /* -------------------------------------------------------------------------- */
 .footer__title {
   margin-bottom: 20px;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
@@ -570,7 +570,7 @@ img {
 /* -------------------------------------------------------------------------- */
 .cards-set__title {
   margin-bottom: 4px;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   text-align: left;
