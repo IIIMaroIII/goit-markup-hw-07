@@ -19,39 +19,41 @@
   </head>
   <body class="page">
     <!-- Шапка сайта -->
-    <header class="page-header header-container">
-      <div class="container">
-        <nav class="main-nav main-nav-container">
-          <a href="./index.html" class="header-logo list">
+    <header class="page-header">
+      <div class="container page-header__container">
+        <nav class="main-nav">
+          <a href="./index.html" class="logo page-header__logo list">
             <span>Web</span>Studio
           </a>
 
           <ul class="site-nav-list list">
-            <li class="site-nav-item">
-              <a class="site-nav-link list" href="./index.html">Студия</a>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link list" href="./index.html">Студия</a>
             </li>
-            <li class="site-nav-item">
-              <a class="site-nav-link list current" href="./portfolio.html"
+            <li class="site-nav-list__item">
+              <a
+                class="site-nav-list__link list current"
+                href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="site-nav-item">
-              <a class="site-nav-link list" href="">Контакты</a>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link list" href="">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <ul class="auth-list list">
-          <li class="auth-item">
-            <a class="auth-link list" href="mailto:info@devstudio.com"
-              ><svg class="mail-icon icons">
+          <li class="auth-list__item">
+            <a class="auth-list__link list" href="mailto:info@devstudio.com"
+              ><svg class="auth-list__icon-mail icons">
                 <use href="./images/svg/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="auth-item">
-            <a class="auth-link list" href="tel:+380961111111"
-              ><svg class="smartphone-icon icons">
+          <li class="auth-list__item">
+            <a class="auth-list__link list" href="tel:+380961111111"
+              ><svg class="auth-list__icon-smartphone icons">
                 <use href="./images/svg/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -62,39 +64,49 @@
     <main>
       <!-- Portfolio -->
 
-      <section class="section portfolio">
+      <section class="portfolio section">
         <div class="container portfolio">
-          <h1 class="section-title portfolio">Фильтр по содержанию</h1>
-          <ul class="button-list list">
-            <li class="button-item">
-              <button class="button" type="button">Всё</button>
+          <h1 class="title--invisible">Фильтр по содержанию</h1>
+          <ul class="filter-menu list">
+            <li class="filter-menu__item">
+              <button class="button filter-menu__button" type="button">
+                Всё
+              </button>
             </li>
-            <li class="button-item">
-              <button class="button" type="button">Веб-сайты</button>
+            <li class="filter-menu__item">
+              <button class="button filter-menu__button" type="button">
+                Веб-сайты
+              </button>
             </li>
-            <li class="button-item">
-              <button class="button" type="button">Приложения</button>
+            <li class="filter-menu__item">
+              <button class="button filter-menu__button" type="button">
+                Приложения
+              </button>
             </li>
-            <li class="button-item">
-              <button class="button" type="button">Дизайн</button>
+            <li class="filter-menu__item">
+              <button class="button filter-menu__button" type="button">
+                Дизайн
+              </button>
             </li>
-            <li class="button-item">
-              <button class="button" type="button">Маркетинг</button>
+            <li class="filter-menu__item">
+              <button class="button filter-menu__button" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
           <!-- Portfolio benefits -->
-          <ul class="benefits-list list">
-            <li class="benefits-item">
-              <a href="" class="benefits-link list">
-                <div class="box-thumb">
+          <ul class="cards-set list">
+            <li class="cards-set__item">
+              <a href="" class="cards-set__link list">
+                <div class="cards-set__wrapper">
                   <img
-                    class="benefits-img"
+                    class="cards-set__image"
                     src="./images/portfolio/techno.jpg"
                     alt="Фотокарточки на мониторе"
                   />
-                  <div class="thumb">
-                    <p class="thumb-text">
+                  <div class="cards-set__wrapper-popup">
+                    <p class="cards-set__popup-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -102,23 +114,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="benefits-wrapper">
-                  <h2 class="section-title">Технокряк</h2>
-                  <p class="benefits-text">Веб-сайт</p>
+                <div class="cards-set__wrapper-desc">
+                  <h2 class="title cards-set__title">Технокряк</h2>
+                  <p class="cards-set__subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="benefits-item">
-              <a href="" class="benefits-link list">
-                <div class="box-thumb">
+            <li class="cards-set__item">
+              <a href="" class="cards-set__link list">
+                <div class="cards-set__wrapper">
                   <img
-                    class="benefits-img"
+                    class="cards-set__image"
                     src="./images/portfolio/new-orlean.jpg"
                     alt="Баскетболисты"
                     width="370"
                   />
-                  <div class="thumb">
-                    <p class="thumb-text">
+                  <div class="cards-set__wrapper-popup">
+                    <p class="cards-set__popup-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -126,25 +138,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="benefits-wrapper">
-                  <h2 class="section-title">
+                <div class="cards-set__wrapper-desc">
+                  <h2 class="title cards-set__title">
                     Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="benefits-text">Дизайн</p>
+                  <p class="cards-set__subtitle">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="benefits-item">
-              <a href="" class="benefits-link list">
-                <div class="box-thumb">
+            <li class="cards-set__item">
+              <a href="" class="cards-set__link list">
+                <div class="cards-set__wrapper">
                   <img
-                    class="benefits-img"
+                    class="cards-set__image"
                     src="./images/portfolio/seafood.jpg"
                     alt="Логотип ресторана"
                     width="370"
                   />
-                  <div class="thumb">
-                    <p class="thumb-text">
+                  <div class="cards-set__wrapper-popup">
+                    <p class="cards-set__popup-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -152,23 +164,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="benefits-wrapper">
-                  <h2 class="section-title">Ресторан Seafood</h2>
-                  <p class="benefits-text">Приложение</p>
+                <div class="cards-set__wrapper-desc">
+                  <h2 class="title cards-set__title">Ресторан Seafood</h2>
+                  <p class="cards-set__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="benefits-item">
-              <a href="" class="benefits-link list">
-                <div class="box-thumb">
+            <li class="cards-set__item">
+              <a href="" class="cards-set__link list">
+                <div class="cards-set__wrapper">
                   <img
-                    class="benefits-img"
+                    class="cards-set__image"
                     src="./images/portfolio/prime.jpg"
                     alt="Наушники"
                     width="370"
                   />
-                  <div class="thumb">
-                    <p class="thumb-text">
+                  <div class="cards-set__wrapper-popup">
+                    <p class="cards-set__popup-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -176,23 +188,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="benefits-wrapper">
-                  <h2 class="section-title">Проект Prime</h2>
-                  <p class="benefits-text">Маркетинг</p>
+                <div class="cards-set__wrapper-desc">
+                  <h2 class="title cards-set__title">Проект Prime</h2>
+                  <p class="cards-set__subtitle">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="benefits-item">
-              <a href="" class="benefits-link list">
-                <div class="box-thumb">
+            <li class="cards-set__item">
+              <a href="" class="cards-set__link list">
+                <div class="cards-set__wrapper">
                   <img
-                    class="benefits-img"
+                    class="cards-set__image"
                     src="./images/portfolio/boxes.jpg"
                     alt="Коробки"
                     width="370"
                   />
-                  <div class="thumb">
-                    <p class="thumb-text">
+                  <div class="cards-set__wrapper-popup">
+                    <p class="cards-set__popup-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -200,23 +212,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="benefits-wrapper">
-                  <h2 class="section-title">Проект Boxes</h2>
-                  <p class="benefits-text">Приложение</p>
+                <div class="cards-set__wrapper-desc">
+                  <h2 class="title cards-set__title">Проект Boxes</h2>
+                  <p class="cards-set__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="benefits-item">
-              <a href="" class="benefits-link list">
-                <div class="box-thumb">
+            <li class="cards-set__item">
+              <a href="" class="cards-set__link list">
+                <div class="cards-set__wrapper">
                   <img
-                    class="benefits-img"
+                    class="cards-set__image"
                     src="./images/portfolio/inspiration.jpg"
                     alt="Монитор с картой"
                     width="370"
                   />
-                  <div class="thumb">
-                    <p class="thumb-text">
+                  <div class="cards-set__wrapper-popup">
+                    <p class="cards-set__popup-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -224,23 +236,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="benefits-wrapper">
-                  <h2 class="section-title">Inspiration has no Borders</h2>
-                  <p class="benefits-text">Веб-сайт</p>
+                <div class="cards-set__wrapper-desc">
+                  <h2 class="title cards-set__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="cards-set__subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="benefits-item">
-              <a href="" class="benefits-link list">
-                <div class="box-thumb">
+            <li class="cards-set__item">
+              <a href="" class="cards-set__link list">
+                <div class="cards-set__wrapper">
                   <img
-                    class="benefits-img"
+                    class="cards-set__image"
                     src="./images/portfolio/limited-edition.jpg"
                     alt="Журнал на светлом фоне"
                     width="370"
                   />
-                  <div class="thumb">
-                    <p class="thumb-text">
+                  <div class="cards-set__wrapper-popup">
+                    <p class="cards-set__popup-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -248,23 +262,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="benefits-wrapper">
-                  <h2 class="section-title">Издание Limited Edition</h2>
-                  <p class="benefits-text">Дизайн</p>
+                <div class="cards-set__wrapper-desc">
+                  <h2 class="title cards-set__title">
+                    Издание Limited Edition
+                  </h2>
+                  <p class="cards-set__subtitle">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="benefits-item">
-              <a href="" class="benefits-link list">
-                <div class="box-thumb">
+            <li class="cards-set__item">
+              <a href="" class="cards-set__link list">
+                <div class="cards-set__wrapper">
                   <img
-                    class="benefits-img"
+                    class="cards-set__image"
                     src="./images/portfolio/lab.jpg"
                     alt="Этикетка на светлом фоне"
                     width="370"
                   />
-                  <div class="thumb">
-                    <p class="thumb-text">
+                  <div class="cards-set__wrapper-popup">
+                    <p class="cards-set__popup-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -272,23 +288,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="benefits-wrapper">
-                  <h2 class="section-title">Проект LAB</h2>
-                  <p class="benefits-text">Маркетинг</p>
+                <div class="cards-set__wrapper-desc">
+                  <h2 class="title cards-set__title">Проект LAB</h2>
+                  <p class="cards-set__subtitle">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="benefits-item">
-              <a href="" class="benefits-link list">
-                <div class="box-thumb">
+            <li class="cards-set__item">
+              <a href="" class="cards-set__link list">
+                <div class="cards-set__wrapper">
                   <img
-                    class="benefits-img"
+                    class="cards-set__image"
                     src="./images/portfolio/growing-business.jpg"
                     alt="Ноутбук с открытой программой"
                     width="370"
                   />
-                  <div class="thumb">
-                    <p class="thumb-text">
+                  <div class="cards-set__wrapper-popup">
+                    <p class="cards-set__popup-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -296,9 +312,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="benefits-wrapper">
-                  <h2 class="section-title">Growing Business</h2>
-                  <p class="benefits-text">Приложение</p>
+                <div class="cards-set__wrapper-desc">
+                  <h2 class="title cards-set__title">Growing Business</h2>
+                  <p class="cards-set__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
@@ -309,19 +325,26 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-address">
-          <a class="footer-logo list" href="./index.html">
+          <a
+            class="logo footer__logo logo--color--white list"
+            href="./index.html"
+          >
             <span>Web</span>Studio
           </a>
-          <address>
-            <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list">
-              <li class="address-mail">
-                <a class="footer-link list" href="mailto:info@example.com"
+          <address class="contact-info">
+            <p class="contact-info__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="contact-info__list list">
+              <li class="contact-info__item">
+                <a
+                  class="contact-info__link--text--mail list"
+                  href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="address-phone">
-                <a class="footer-link list" href="tel:+380991111111"
+              <li class="contact-info__item">
+                <a
+                  class="contact-info__link--text--tel list"
+                  href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -329,32 +352,44 @@
           </address>
         </div>
         <div class="connecting">
-          <h2 class="section-title">присоединяйтесь</h2>
-          <ul class="socials list">
-            <li class="socials-item">
-              <a href="" class="socials-link">
-                <svg width="20" height="20" class="socials-icon">
+          <h2 class="footer__title">присоединяйтесь</h2>
+          <ul class="socials-list socials-list--bgc--dark list">
+            <li class="socials-list__item">
+              <a
+                href=""
+                class="socials-list__link footer__socials-list--bgc--dark"
+              >
+                <svg width="20" height="20" class="socials-list__icon">
                   <use href="./images/svg/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
-              <a href="" class="socials-link">
-                <svg width="20" height="20" class="socials-icon">
+            <li class="socials-list__item">
+              <a
+                href=""
+                class="socials-list__link footer__socials-list--bgc--dark"
+              >
+                <svg width="20" height="20" class="socials-list__icon">
                   <use href="./images/svg/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
-              <a href="" class="socials-link">
-                <svg width="20" height="20" class="socials-icon">
+            <li class="socials-list__item">
+              <a
+                href=""
+                class="socials-list__link footer__socials-list--bgc--dark"
+              >
+                <svg width="20" height="20" class="socials-list__icon">
                   <use href="./images/svg/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
-              <a href="" class="socials-link">
-                <svg width="20" height="20" class="socials-icon">
+            <li class="socials-list__item">
+              <a
+                href=""
+                class="socials-list__link footer__socials-list--bgc--dark"
+              >
+                <svg width="20" height="20" class="socials-list__icon">
                   <use href="./images/svg/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -362,25 +397,27 @@
           </ul>
         </div>
         <form class="footer-form">
-          <p class="section-title footer-form-text">Подпишитесь на рассылку</p>
+          <h2 class="footer-form__text footer__title">
+            Подпишитесь на рассылку
+          </h2>
 
           <div class="sigh-up">
             <input
               name="user_email"
               type="text"
-              class="footer-form-input"
+              class="footer-form__input"
               placeholder="E-mail"
             />
-            <span class="footer-form-wrapper">
+            <span class="footer-form__wrapper">
               <button
-                class="button-modal-submit hero-button button-sigh-up"
+                class="button footer-form__button--position--left"
                 type="submit"
               >
                 Подписаться
+                <svg class="footer-button-modal-icon">
+                  <use href="./images/svg/icons.svg#icon-sign-up"></use>
+                </svg>
               </button>
-              <svg class="footer-button-modal-icon">
-                <use href="./images/svg/icons.svg#icon-sign-up"></use>
-              </svg>
             </span>
           </div>
         </form>

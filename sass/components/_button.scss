@@ -1,55 +1,47 @@
-.hero-button,
 .button {
-  border: none;
-  cursor: pointer;
-}
-
-.hero-button {
-  transition: background-color var(--duration) var(--timing-function),
-    color var(--duration) var(--timing-function);
-
   display: block;
+  cursor: pointer;
+
   margin-left: auto;
   margin-right: auto;
-  border-radius: 4px;
   min-width: 200px;
-  padding: 10px 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
   font-weight: 700;
-  font-size: inherit;
+  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  color: var(--white-color);
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+
+  transition: box-shadow var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function);
 
   &:hover,
   &:focus {
     background-color: var(--accent-color-secondary);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
   }
 }
 
-.button-sigh-up {
+.footer-form__button--position--left {
   margin-left: 12px;
   text-align: left;
   padding-left: 28px;
-  transition: box-shadow var(--duration) var(--timing-function);
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
 }
 
-/* -------------------------------------------------------------------------- */
-/*                              Portfolio button                              */
-/* -------------------------------------------------------------------------- */
-
-.button {
+.filter-menu__button {
   min-width: 73px;
   padding: 6px 22px;
-  border-radius: 4px;
-  border-color: var(--third-background-color);
+
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
 
   transition: background-color var(--duration) var(--timing-function),
     color var(--duration) var(--timing-function),
@@ -57,15 +49,8 @@
 
   color: var(--title-text-color);
   background-color: var(--third-background-color);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: inherit;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: inherit;
 
   &:not(:last-child) {
-    display: inline-block;
     margin-right: 8px;
   }
 
@@ -79,34 +64,8 @@
   }
 }
 
-/* -------------------------------------------------------------------------- */
-/*                             Button modal submit                            */
-/* -------------------------------------------------------------------------- */
-
-.button-modal-submit {
-  transition: box-shadow var(--duration) var(--timing-function);
-
-  &:focus,
-  &:hover {
-    outline: none;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-  }
-}
-
-/* -------------------------------------------------------------------------- */
-/*                               Overlay Button                               */
-/* -------------------------------------------------------------------------- */
-
-.overlay-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button-close {
+  @extend %flex;
 
   width: 30px;
   height: 30px;
@@ -121,13 +80,8 @@
   }
 }
 
-.overlay-svg {
-  transition: fill var(--duration) var(--timing-function);
-
-  width: 18px;
-  height: 18px;
-
-  .overlay-btn:focus & {
-    fill: var(--accent-color);
-  }
+.overlay__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }

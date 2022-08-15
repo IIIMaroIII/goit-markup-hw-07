@@ -6,13 +6,11 @@
   --items: 4;
 }
 
-.customers-link {
+.customers-list__link {
   transition: border-color var(--duration) var(--timing-function),
     fill var(--duration) var(--timing-function);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex;
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   width: 170px;
   height: 92px;

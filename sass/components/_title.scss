@@ -1,126 +1,85 @@
-/* -------------------------------------------------------------------------- */
-/*                                 Hero Title                                 */
-/* -------------------------------------------------------------------------- */
-.hero-title {
+.title {
   display: block;
-  width: 696px;
-  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--white-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  color: var(--title-text-color);
+
+  @include font;
   text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
-/* -------------------------------------------------------------------------- */
-/*                                Section Title                               */
-/* -------------------------------------------------------------------------- */
-.section-title {
+
+.title--color--black {
   color: var(--title-text-color);
 }
-/* -------------------------------------------------------------------------- */
-/*                               Features title                               */
-/* -------------------------------------------------------------------------- */
 
-.features-item > .section-title {
-  display: block;
-  margin-bottom: 10px;
+.title--position {
+  margin-bottom: 50px;
 }
 
-.features .section-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.features-container > .section-title {
+.title--invisible {
   display: none;
 }
 /* -------------------------------------------------------------------------- */
-/*                                     Job                                    */
+/*                                 hero__title                                */
 /* -------------------------------------------------------------------------- */
-.job .section-title {
-  margin-bottom: 50px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+.hero__title {
+  width: 696px;
+  @include font($fw: 900px, $fs: 44px, $lh: 60px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
   text-align: center;
 }
 
+.hero__title--position {
+  margin-bottom: 30px;
+}
+
 /* -------------------------------------------------------------------------- */
-/*                                Team wrapper                                */
+/*                               features__title                              */
 /* -------------------------------------------------------------------------- */
 
-.team-wrapper > .section-title {
+.features-list__title {
   display: block;
+  margin-bottom: 10px;
+  @include font($fw: 700px, $fs: 14px, $lh: 16px);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    team                                    */
+/* -------------------------------------------------------------------------- */
+
+.team-list__title {
+  @include font($fw: 500px, $fs: 16px, $lh: 19px);
+}
+
+.team-list__title--position {
   margin-bottom: 10px;
 }
 
-/* -------------------------------- Team-item ------------------------------- */
-
-.team-item > .section-title,
-.team-item > .section-text {
-  line-height: 1.19;
-  text-align: center;
-}
-
-.team-item > .section-title {
-  font-size: 16px;
-  font-weight: 500;
-}
-
 /* -------------------------------------------------------------------------- */
-/*                                  Customers                                 */
+/*                                   footer                                   */
 /* -------------------------------------------------------------------------- */
 
-.container > .section-title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-.customers .section-title {
-  margin-bottom: 50px;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                Footer title                                */
-/* -------------------------------------------------------------------------- */
-
-.connecting .section-title {
+.footer__title {
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font($fs: 14px, $lh: 16px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
 }
 
 /* -------------------------------------------------------------------------- */
-/*                               Portfolio title                              */
+/*                                  cards-set                                 */
 /* -------------------------------------------------------------------------- */
 
-.portfolio > .section-title {
-  display: none;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                    Portfolio benefits (rename "Cardset")                   */
-/* -------------------------------------------------------------------------- */
-
-.benefits-list .section-title {
+.cards-set__title {
   margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  @include font($fs: 18px, $lh: 36px);
+  text-align: left;
   letter-spacing: 0.06em;
 }

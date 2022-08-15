@@ -6,15 +6,7 @@
   margin-right: auto;
 }
 
-/* ---------------------------- Header container ---------------------------- */
-
-.header-container > .container {
+.page-header__container {
   display: flex;
   align-items: center;
-}
-
-/* --------------------------- Main-nav container --------------------------- */
-
-.main-nav-container {
-  display: flex;
 }
