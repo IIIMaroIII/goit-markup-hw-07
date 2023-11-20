@@ -929,7 +929,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   background-color: var(--secondary-background-color);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
@@ -1007,10 +1007,6 @@ img {
   color: var(--white-color);
 }
 
-.section.team {
-  padding-top: 94px;
-}
-
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1038,7 +1034,7 @@ img {
   background-color: var(--white-color);
 }
 
-.section.team {
+.team {
   background-color: var(--third-background-color);
 }
 
